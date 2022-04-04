@@ -21,8 +21,8 @@ public class Photos extends Application{
 
 			AnchorPane root = (AnchorPane)loader.load();
 
-//			LoginController controller = loader.getController();
-//			controller.start();
+			LoginController controller = loader.getController();
+			controller.start();
 		
 		
 			Scene scene = new Scene(root);

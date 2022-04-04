@@ -19,30 +19,28 @@ public class LoginController {
     @FXML private TextField username;
 
     @FXML void login(ActionEvent event) throws IOException{
-    	System.out.println("yep");
-    	Parent root = FXMLLoader.load(getClass().getResource("views/HomeScreen.fxml"));
+//    	System.out.println("login");
+    	Parent root = FXMLLoader.load(getClass().getResource("/views/HomeScreen.fxml"));
     	Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
     	Scene scene = new Scene(root);
+    	
     	stage.setScene(scene);
     	stage.show();
+    	
     }
 
-    @FXML void signup(ActionEvent event) {
-    	System.out.println("yep");
-    	Parent root;
-		try {
-			root = FXMLLoader.load(getClass().getResource("views/HomeSceen.fxml"));
-	    	Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-	    	Scene scene = new Scene(root);
-	    	stage.setScene(scene);
-	    	stage.show();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+    @FXML void signup(ActionEvent event) throws IOException{
+//    	System.out.println("signup");
+    	Parent root = FXMLLoader.load(getClass().getResource("/views/HomeScreen.fxml"));
+    	Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+    	Scene scene = new Scene(root);
+    	
+    	stage.setScene(scene);
+    	stage.show();
+    	
     }
     public void start() {
-    	System.out.println("here");
+//    	System.out.println("here");
     }
 
 }
